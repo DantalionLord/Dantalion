@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio de Desarrollo de Software</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="bg-blur">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="precios.html">Precios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="legal.html">Legal</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+        <img src="img/profile.webp" alt="Dantalion" class="profile-img glass">
+        <div class="glass" style="padding: 1.5rem;">
+            <h1>Desarrollador de Software & Soporte TI</h1>
+            <p>Especializado en desarrollo de soluciones personalizadas y mantenimiento de sistemas</p>
+        </div>
+    </section>
+
+    <section id="servicios" class="services-grid">
+        <div class="service-card glass">
+            <h3>Desarrollo de Software</h3>
+            <p>Soluciones personalizadas para tus necesidades empresariales</p>
+        </div>
+        <div class="service-card glass">
+            <h3>Mantenimiento Windows/Linux</h3>
+            <p>Optimización, seguridad y actualizaciones de sistemas</p>
+        </div>
+        <div class="service-card glass">
+            <h3>Soporte Hardware</h3>
+            <p>Reparación y mantenimiento de equipos electrónicos</p>
+        </div>
+    </section>
+
+    <section class="skills-section">
+    <h2>Habilidades Técnicas</h2>
+    <div class="skill-container">
+        <div class="skill" data-percent="96%">
+            <a href="habilidades.html#cplusplus" class="skill-link">
+            <span>C/C++</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 96%"></div>
+            </div>
+            </a>
+        </div>
+        <div class="skill" data-percent="84%">
+            <a href="habilidades.html#python" class="skill-link">
+            <span>Python</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 84%"></div>
+            </div>
+            </a>
+        </div>
+        <div class="skill" data-percent="89%">
+            <a href="habilidades.html#ensamblador" class="skill-link">
+            <span>Ensamblador</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 89%"></div>
+            </div>
+            </a>
+        </div>
+        <div class="skill" data-percent="87%">
+            <a href="habilidades.html#web" class="skill-link">
+            <span>HTML, CSS & JS</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 87%"></div>
+            </div>
+            </a>
+        </div>
+        <div class="skill" data-percent="58%">
+            <a href="habilidades.html#java" class="skill-link">
+            <span>Java</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 58%"></div>
+            </div>
+            </a>
+        </div>
+          <div class="skill" data-percent="93%">
+            <a href="habilidades.html#sql" class="skill-link">
+            <span>SQL</span>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 93%"></div>
+            </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <section class="cta-pricing glass">
+        <h2>¿Listo para comenzar tu proyecto?</h2>
+        <p>Consulta nuestros modelos de Precios</p>
+        <a href="precios.html" class="pricing-button">Ver Tarifas</a>
+    </section>
+
+    <section id="contacto" class="contact-section glass">
+        <h2>Contacto</h2>
+        <p>Email: <a href="mailto:DantalionLord@proton.me" class="contact-link">Dantalion Mail</a></p>
+        <p>Teléfono: <a href="https://t.me/DantalionLord" class="contact-link" target="_blank" rel="noopener">Telegram</a></p>
+    </section>
+
+    <footer class="glass">
+        <p>&copy; 2025 DantalionLord. Todos los derechos reservados.</p>
+        <p><a href="terminos.html">Términos y Condiciones</a> | <a href="privacidad.html">Política de Privacidad</a></p>
+    </footer>
+
+    <script>
+        // Suavizado del scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoader', function() {
+            function adjustHeroPadding() {
+                const nav = document.querySelector('nav');
+                const hero = document.querySelector('.hero');
+
+                if (nav && hero) {
+                    const navHeight = nav.offsetHeight;
+                    const isMobile = window.innerWidth <= 768;
+
+                    hero.style.paddingTop = isMobile
+                    ? `${navHeight + 30}px`
+                    : `${navHeight + 50}px`
+                }
+            }
+            adjustSpacing();
+            window.addEventListener('resize', adjustSpacing);
+            window.addEventListener('orientationchange', adjustSpacing);
+        });
+    </script>
+</body>
+</html>

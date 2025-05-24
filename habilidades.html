@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de Habilidades | Dantalion</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Añade solo si necesitas estilos específicos */
+        .skill-detail {
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+        
+        .skill-detail:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-blur">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#servicios">Servicios</a></li>
+            <li><a href="precios.html">Precios</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><a href="habilidades.html" class="active">Habilidades</a></li>
+        </ul>
+    </nav>
+
+    <section class="skills-detail-container">
+        <h1 class="glass" style="padding: 1.5rem; text-align: center;">Detalles de Habilidades</h1>
+        
+        <div class="skill-detail glass" id="cplusplus">
+            <h2>C/C++ <span class="skill-percent">96%</span></h2>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 96%"></div>
+            </div>
+            <p class="skill-description">
+                Desarrollo de sistemas de bajo nivel, optimización de rendimiento, 
+                creación de drivers y software embebido. Experiencia con:
+                <ul>
+                    <li>Multithreading y gestión de memoria</li>
+                    <li>Interacción directa con hardware</li>
+                    <li>Librerías como Boost y Qt</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="skill-detail glass" id="python">
+            <h2>Python <span class="skill-percent">84%</span></h2>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 84%"></div>
+            </div>
+            <p class="skill-description">
+                Desarrollo de scripts de automatización, análisis de datos, 
+                y aplicaciones web con Django/Flask. Especialización en:
+                <ul>
+                    <li>Machine Learning con TensorFlow</li>
+                    <li>Web Scraping con BeautifulSoup</li>
+                    <li>Desarrollo de APIs REST</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="skill-detail glass" id="ensamblador">
+            <h2>Ensamblador <span class="skill-percent">89%</span></h2>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 89%"></div>
+            </div>
+            <p class="skill-description">
+                Lenguaje de programación simbólica más cercano al lenguaje
+                 máquina en forma y contenido, y por tanto es un excelente 
+                 candidato para escribir programas en los que se necesita 
+                 tener control de su programa, hasta el nivel de byte o bit. 
+                 Especialización en:
+                <ul>
+                    <li>Sistemas embebidos y maquinaria</li>
+                    <li>Programación de Kernels</li>
+                    <li>Depuración e Ingeniería Inversa</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="skill-detail glass" id="web">
+            <h2>HTML, CSS, JS <span class="skill-percent">87%</span></h2>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 87%"></div>
+            </div>
+            <p class="skill-description">
+                Son lenguajes usados para el desarrollo Web, HTML se encarga
+                del cuerpo central, CSS de los estilos y JS de los scripts y más.
+                 Especialización en:
+                <ul>
+                    <li>Páginas Web</li>
+                    <li>Aplicaciones Web</li>
+                    <li>Blogs, Foros, Redes Sociales, etc</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="skill-detail glass" id="java">
+            <h2>Java <span class="skill-percent">58%</span></h2>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 58%"></div>
+            </div>
+            <p class="skill-description">
+                 Lenguaje de programación y una plataforma informática,
+                 podemos verlo a diario en Android y Minecraft, la mayoría
+                 de apks se desarrollan con Java.
+                 Especialización en:
+                <ul>
+                    <li>Aplicaciones Android</li>
+                    <li>Aplicaciones Web</li>
+                    <li>Aplicaciones generales</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="skill-detail glass" id="sql">
+            <h2>SQL <span class="skill-percent">93%</span></h2>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 93%"></div>
+            </div>
+            <p class="skill-description">
+                 Se usa para describir conjuntos de datos que pueden ayudarle 
+                 a responder preguntas, guardar información, modificarla y
+                 acceder a ella de forma simple.
+                 Especialización en:
+                <ul>
+                    <li>Bases de Datos</li>
+                    <li>Manejo de información</li>
+                    <li>Sistemas generales de información</li>
+                </ul>
+            </p>
+        </div>
+        
+    </section>
+
+    <footer class="glass">
+        <p><a href="index.html">← Volver al Inicio</a></p>
+        <p>&copy; 2024 DantalionLord. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Efecto de scroll suave al cargar desde un enlace
+        document.addEventListener('DOMContentLoaded', function() {
+            if(window.location.hash) {
+                const target = document.querySelector(window.location.hash);
+                if(target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
