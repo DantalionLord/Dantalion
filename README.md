@@ -23,6 +23,10 @@ npm run preview
 
 La compilación estática se genera en `dist/`. El servidor de producción debe redirigir las rutas de la aplicación (`/tarifas`, `/competencias`, `/terminos` y `/politica-de-privacidad`) a `index.html` para que React Router pueda resolverlas. Los antiguos enlaces `.html` se mantienen como páginas de redirección.
 
+## GitHub Pages
+
+El workflow de `.github/workflows/deploy.yml` compila y publica `dist/` al hacer push a `main`. En la configuración del repositorio, selecciona **Settings → Pages → Build and deployment → Source: GitHub Actions**. La compilación usa `/Dantalion/` como base y publica `404.html` para que las rutas de React Router funcionen al abrirlas directamente.
+
 ## Componentes
 
 - `src/components/ui/`: componentes de interfaz, como el Dock de navegación.

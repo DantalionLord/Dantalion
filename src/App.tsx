@@ -334,7 +334,7 @@ function HomePage() {
           <div className="visual-orbit orbit-two" />
           <div className="visual-glow" />
           <div className="profile-frame">
-            <img src="/img/profile-new.jpg" alt="Retrato de Dantalion" className="profile-img" />
+            <img src={`${import.meta.env.BASE_URL}img/profile-new.jpg`} alt="Retrato de Dantalion" className="profile-img" />
             <span className="profile-index">01 / CREATOR</span>
           </div>
           <div className="floating-card floating-card-top"><span className="floating-icon" aria-hidden="true">✳</span><span><strong>Soluciones</strong><small>pensadas para ti</small></span></div>
